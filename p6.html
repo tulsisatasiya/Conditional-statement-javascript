@@ -1,0 +1,33 @@
+<script type="text/javascript">
+
+    var Physics = parseInt(prompt("Enter the a Physics marks :-"));
+    var Chemistry = parseInt(prompt("Enter the a Chemistry  marks :-"));
+    var Biology = parseInt(prompt("Enter the a Biology marks :-"));
+    var Mathematics = parseInt(prompt("Enter the a Mathematics marks :-"));
+    var computer = parseInt(prompt("Enter the a computer  marks :-"));
+
+    var total = Physics + Chemistry + Biology + Mathematics + computer
+    var percentage = (total / 500) * 100;
+    var grade; 
+
+
+    if(percentage >= 90){
+        grade = "A";
+    }else if(percentage >= 80){
+        grade = "B";
+    }else if(percentage >= 70){
+        grade = "C";
+    }else if(percentage >= 60){
+        grade = "D";
+    }else if(percentage >= 50){
+        grade = "E";
+    }else{
+        grade="F";
+    }
+
+   document.write("<h1 style='color: green'>TOTAL :- " + total + "</h1>")
+   document.write("<h1 style='color: blue'>PERCENTAGE :- " + percentage + "</h1>")
+   document.write("<h1 style='color: brown'>GRADE :- " + grade + "</h1>")
+
+</script>
+
